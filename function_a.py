@@ -1,7 +1,11 @@
 def most_common_value(number_list):
     """ returns the most common element of the list
     """
-    pass
+    most_common= max(set(number_list), key = number_list.count)
+
+    return most_common
+
+most_common_value([3,3,4,3,6,5])
 
 
 if __name__ == "__main__":
