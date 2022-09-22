@@ -7,8 +7,14 @@ def silly_sum():
         the user enters 0, or
         the sum reaches or exceeds 1000
     """
-    pass
+    input_int = 0
+    num = input("Enter a number: ")
+    while num != 0 and input_int < 999:
+        input_int += int(num)
+        print(input_int)
+        num = input("Enter a number: ")
 
+    return input_int
 
 if __name__ == "__main__":
     print(f"Answer = {silly_sum()}")
